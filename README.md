@@ -26,8 +26,8 @@ Replace <username> with the GitHub username whose repositories you want to backu
 ## Output
 
 The script creates 
-- directory github_backup_<username>_<date> 
-- tar file github_backup_<username>_<date>.tar 
+- A directory github_backup_username_date 
+- A tar file github_backup_username_date.tar 
 
 To complete the backup upload the tar file to either Google Drive, One Drive, or worst case a thumb drive.
 
