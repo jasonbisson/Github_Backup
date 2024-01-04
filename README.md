@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Creates local copies: It saves these backups directly onto your computer, ensuring you always have access to them, even if you're offline or can't reach GitHub for some reason.
-
-- Protects your data: This gives you an extra layer of security in case of:
+- Creates local copies of public repos: The script backup public git repositories onto your computer where they can be copied to cloud service like Google Drive or One Drive for long term backup.
 - Accidental deletion: If you accidentally delete something on GitHub, you'll have a local copy to restore from.
 - Account issues: If you lose access to your GitHub account, you won't lose your code.
 - GitHub service disruptions: Even if GitHub goes down, you can still work with your code locally.
