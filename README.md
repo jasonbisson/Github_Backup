@@ -2,31 +2,35 @@
 
 ## Purpose
 
-This script automates the backup of public GitHub repositories for a specified user. It creates local copies of the repositories, ensuring data preservation and offline access.
+Creates local copies: It saves these backups directly onto your computer, ensuring you always have access to them, even if you're offline or can't reach GitHub for some reason.
+
+- Protects your data: This gives you an extra layer of security in case of:
+- Accidental deletion: If you accidentally delete something on GitHub, you'll have a local copy to restore from.
+- Account issues: If you lose access to your GitHub account, you won't lose your code.
+- GitHub service disruptions: Even if GitHub goes down, you can still work with your code locally.
 
 ## Requirements
 
-Bash: The script is written in Bash, a common Unix shell.
-git: Ensure Git is installed on your system.
-jq: Required for parsing JSON responses from the GitHub API.
+- Bash: The script is written in Bash, a common Unix shell.
+- git: Ensure Git is installed on your system.
+- jq: Required for parsing JSON responses from the GitHub API.
 ## Usage
 
-Download the script:
+- Download the script:
 Clone this repository or download the github-backup.sh file.
-Run the script:
-Open a terminal and navigate to the script's directory.
 
-Execute the script with the following command:
-
-Bash
+- Execute the script with the following command:
+```
 ./github-backup.sh <username>
-Use code with caution. Learn more
+```
 Replace <username> with the GitHub username whose repositories you want to backup.
 
 ## Output
 
-The script creates a directory named github_backup_<username>_<date> to store the cloned repositories.
-It provides feedback in the terminal, indicating progress and any errors.
+The script creates a directory named github_backup_<username>_<date> and tar file github_backup_<username>_<date>.tar. 
+
+To complete the backup upload the tar file to either Google Drive, One Drive, or worst case a thumb drive.
+
 ## Features
 
 Fetches a list of public repositories for the specified user.
